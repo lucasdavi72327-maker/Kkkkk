@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Painel</title>
+
+<style>
+body{
+background:black;
+color:red;
+text-align:center;
+font-family:Arial;
+margin-top:120px;
+}
+
+h1{
+font-size:40px;
+}
+</style>
+
+</head>
+
+<body onclick="tocar()">
+
+<h1>⚠ SISTEMA INVADIDO ⚠</h1>
+<p>Clique na tela para continuar...</p>
+
+<audio id="som">
+<source src="https://www.myinstants.com/media/sounds/gemidao-do-zap.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function tocar(){
+document.getElementById("som").play();
+}
+</script>
+
+</body>
+</html>
